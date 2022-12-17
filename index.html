@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schimb valutar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="logo.png" alt="" class="logo-img" />
+    </div>
+    <div class="exchange-box">
+      <div class="exchange-values">
+        <div class="ammount">
+          <p class="info-up">Ammount</p>
+          <input type="text" class="sum" placeholder="Enter sum" />
+        </div>
+        <div class="from">
+          <p class="info-up">From</p>
+          <select class="left-dropdown"></select>
+        </div>
+        <img src="swap-arrows.png" class="swap" />
+        <div class="to">
+          <p class="info-up">To</p>
+          <select name="currency" class="right-dropdown"></select>
+          <button class="convert-btn">Convert</button>
+        </div>
+      </div>
+      <div class="exchange-result">
+        <div class="result"></div>
+      </div>
+    </div>
+    <div class="common-values">
+      <div class="common-values1"></div>
+      <div class="common-values2"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
