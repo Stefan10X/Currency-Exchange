@@ -1,3 +1,16 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+/* 
+MAIN COLOR: #155bd5 
+GREY COLOR: #fafafa
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -11,39 +24,61 @@ html {
 }
 
 body {
-  background-color: rgb(148, 212, 254);
-  font-family: Verdana, sans-serif;
-  color: rgb(46, 60, 87);
+  background-color: #efefef;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 180px;
+  height: 70px;
   cursor: pointer;
-  margin-bottom: 40px;
 }
 
-.logo-img {
-  width: 170px;
+h1 {
+  font-size: 36px;
+  align-self: center;
+  color: #fff;
+}
+
+.swap {
+  height: 70px;
+  background-color: #fff;
+  border: 2px solid transparent;
+  stroke: #155bd5;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 35px;
+  padding: 12px;
+}
+
+.swap:hover {
+  border: 2px solid #fff;
+  background-color: #155bd5;
+  stroke: #fff;
 }
 
 .exchange-box {
   position: relative;
   height: 500px;
   width: 1000px;
-  margin: 50px auto;
-  background-color: rgb(96, 191, 255);
+  margin: 100px auto 50px auto;
+  background-color: #155bd5;
   border-radius: 1rem;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
 .exchange-values {
-  padding: 100px 0px;
+  padding: 60px 0px;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 55px;
+  color: #e2f1ff;
 }
 
 .sum {
@@ -52,13 +87,17 @@ body {
   height: 70px;
   padding: 0 1rem;
   outline: 0;
-  border: 1px solid;
-  border-radius: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sum::placeholder {
+  color: #6d6d6d;
 }
 
 .info-up {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .exchange-result {
@@ -66,59 +105,56 @@ body {
   width: 500px;
 }
 
-.swap {
-  height: 70px;
-  cursor: pointer;
-  margin-top: 30px;
-  border: 1px solid;
-  border-radius: 40px;
-  padding: 10px;
-}
-
 .convert-btn {
   position: absolute;
-  bottom: 100px;
-  right: 145px;
+  bottom: 85px;
+  right: 170px;
   border: none;
   line-height: 1em;
   text-align: center;
-  background: white;
+  background: #fff;
+  color: #155bd5;
+  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   background-size: 300%;
-  z-index: 1;
-  border-radius: 20px;
+  border-radius: 4px;
   width: 150px;
-  height: 75px;
-  font-size: 23px;
+  height: 60px;
+  font-size: 24px;
 }
 
 .convert-btn:hover {
-  background-color: rgb(13, 156, 252);
-  transition: 0.5s;
+  background-color: #155bd5;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 .left-dropdown {
-  border: 1px solid;
-  border-radius: 1rem;
-  text-align: center;
-  font-size: 25px;
+  border: 1px solid transparent;
+  font-size: 24px;
+  font-weight: bold;
   height: 70px;
-  width: 140px;
+  width: 100px;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
 }
 
 .right-dropdown {
-  border: 1px solid;
-  border-radius: 1rem;
-  text-align: center;
-  font-size: 25px;
+  border: 1px solid transparent;
+  font-size: 24px;
+  font-weight: bold;
   height: 70px;
-  width: 140px;
+  width: 100px;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
 }
 
 .result {
-  font-size: 40px;
-  margin-left: 55px;
+  font-size: 36px;
+  margin-left: 80px;
 }
 
 .common-values {
@@ -131,24 +167,14 @@ body {
   font-size: 20px;
 }
 
-.common1 {
+.common {
   width: 470px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  background-color: rgb(96, 191, 255);
-  border-radius: 1rem;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
-}
-
-.common2 {
-  width: 470px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  background-color: rgb(96, 191, 255);
-  border-radius: 1rem;
-  box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+  background-color: #155bd5;
+  border-radius: 1.2rem;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 .common-header {
@@ -162,6 +188,8 @@ body {
   width: 100%;
   background: white;
   border-radius: 1rem 1rem 0 0;
+  color: black;
+  padding-top: 10px;
 }
 
 .values {
@@ -169,6 +197,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #e2f1ff;
 }
 
 .results {

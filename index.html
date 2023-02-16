@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Exchange</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="logo">
-      <img src="logo.png" alt="" class="logo-img" />
-    </div>
     <div class="exchange-box">
+      <header>
+        <img src="./swap.png" class="logo" />
+        <h1>Currency Converter</h1>
+      </header>
       <div class="exchange-values">
         <div class="ammount">
           <p class="info-up">Ammount</p>
@@ -19,12 +26,25 @@
         </div>
         <div class="from">
           <p class="info-up">From</p>
-          <select class="left-dropdown"></select>
+          <select class="dropdown left-dropdown"></select>
         </div>
-        <img src="swap-arrows.png" class="swap" />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="swap"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"
+          />
+        </svg>
         <div class="to">
           <p class="info-up">To</p>
-          <select name="currency" class="right-dropdown"></select>
+          <select name="currency" class="dropdown right-dropdown"></select>
           <button class="convert-btn">Convert</button>
         </div>
       </div>
@@ -36,7 +56,6 @@
       <div class="common-values1"></div>
       <div class="common-values2"></div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
