@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background-color: #efefef;
+  background-color: #e8effb;
   font-family: "Inter", sans-serif;
   color: #fff;
 }
@@ -78,7 +78,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 55px;
-  color: #e2f1ff;
+  color: #d0def7;
 }
 
 .sum {
@@ -197,7 +197,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #e2f1ff;
+  color: #d0def7;
 }
 
 .results {
